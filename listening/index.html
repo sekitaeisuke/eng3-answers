@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>中3英語　リスニング音声</title>
+<style>
+:root { --bg:#fffdf8; --card:#fff; --ink:#2b2620; --sub:#8a5a2b; --line:#e9dcc2;
+        --brand:#b5651d; --accbg:#eef6ef; --chip:#faf4e8; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#191512; --card:#221d18; --ink:#ece3d6; --sub:#d3a56a; --line:#3a3128;
+          --brand:#e0913f; --accbg:#1e2a22; --chip:#241f18; } }
+* { box-sizing:border-box; }
+body { margin:0; padding:16px 14px 132px; background:var(--bg); color:var(--ink);
+       font-family:-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+       line-height:1.7; -webkit-text-size-adjust:100%; }
+.wrap { max-width:720px; margin:0 auto; }
+h1 { font-size:1.25rem; margin:0 0 2px; color:var(--brand); }
+.sub { color:var(--sub); font-size:.85rem; margin:0 0 18px; }
+h2 { font-size:1rem; margin:26px 0 10px; padding:7px 12px; background:var(--chip);
+     border-left:5px solid var(--brand); border-radius:0 8px 8px 0; }
+.note { background:var(--accbg); border:1px solid var(--line); border-radius:10px;
+        padding:11px 13px; font-size:.85rem; margin:0 0 18px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(148px,1fr)); gap:9px; }
+.units { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:9px; }
+.row { display:flex; align-items:center; gap:8px; background:var(--card);
+       border:1px solid var(--line); border-radius:11px; padding:8px 9px; }
+.no { font-weight:700; font-size:.95rem; min-width:2.6em; color:var(--brand); }
+.no.mono { font-size:.78rem; min-width:5.6em; }
+button { flex:1; font:inherit; font-size:.82rem; padding:7px 4px; cursor:pointer;
+         border:1px solid var(--line); border-radius:8px; background:var(--chip);
+         color:var(--ink); -webkit-tap-highlight-color:transparent; }
+button:active { transform:translateY(1px); }
+button.slow { flex:0 0 auto; padding:7px 9px; }
+button[aria-pressed="true"] { background:var(--brand); color:#fff; border-color:var(--brand); }
+a.unit { display:block; background:var(--card); border:1px solid var(--line);
+         border-radius:11px; padding:11px 13px; text-decoration:none; color:var(--ink); }
+a.unit b { color:var(--brand); display:block; font-size:.8rem; }
+.back { display:inline-block; margin:0 0 14px; color:var(--brand); font-size:.85rem; }
+#player { position:fixed; left:0; right:0; bottom:0; background:var(--card);
+          border-top:2px solid var(--brand); padding:9px 14px 12px; }
+#player .inner { max-width:720px; margin:0 auto; }
+#now { font-size:.85rem; color:var(--sub); margin:0 0 5px; }
+audio { width:100%; height:38px; }
+</style></head>
+<body><div class="wrap">
+<h1>中3英語　リスニング音声</h1>
+<p class="sub">問題集のリスニング音声を単元ごとに聞けます</p>
+<p class="note">聞きたい単元を選んでください。このページをホーム画面に追加しておくと、次からすぐ開けます。</p><h2>上巻</h2><div class="units"><a class="unit" href="u1.html"><b>U1</b>現在完了①（完了・結果）</a><a class="unit" href="u2.html"><b>U2</b>現在完了②（経験）</a><a class="unit" href="u3.html"><b>U3</b>現在完了③（継続）</a><a class="unit" href="u4.html"><b>U4</b>現在完了進行形（have been ~ing）</a><a class="unit" href="u5.html"><b>U5</b>受動態の発展</a><a class="unit" href="u6.html"><b>U6</b>不定詞の発展①（It is ... to ~ / 人 to ~）</a><a class="unit" href="u7.html"><b>U7</b>不定詞の発展②（疑問詞+to / too~to / ~enough to）</a><a class="unit" href="u8.html"><b>U8</b>間接疑問文</a><a class="unit" href="u9.html"><b>U9</b>原形不定詞（使役・知覚動詞）</a><a class="unit" href="sup.html"><b>Sup</b>上巻総合演習（U1〜U9 総まとめ）</a></div><h2>下巻</h2><div class="units"><a class="unit" href="u10.html"><b>U10</b>分詞の後置修飾①（現在分詞）</a><a class="unit" href="u11.html"><b>U11</b>分詞の後置修飾②（過去分詞）</a><a class="unit" href="u12.html"><b>U12</b>関係代名詞①（主格 who / which / that）</a><a class="unit" href="u13.html"><b>U13</b>関係代名詞②（目的格 which/that・接触節・省略）</a><a class="unit" href="u14.html"><b>U14</b>仮定法（I wish ~ / If + 過去形, ~ would/were）</a><a class="unit" href="u15.html"><b>U15</b>会話・機能表現の整理（中3総合運用）</a><a class="unit" href="u16.html"><b>U16</b>総合復習（4技能総まとめ）</a><a class="unit" href="sup2.html"><b>Sup2</b>下巻総合演習（U10〜U16 総まとめ）</a></div>
+</div>
+<div id="player"><div class="inner"><p id="now">番号を選ぶと音声が流れます</p>
+<audio id="a" controls preload="none"></audio></div></div>
+<script>
+var A=document.getElementById('a'),N=document.getElementById('now'),cur=null;
+function play(base,id,slow,btn){
+  if(cur){cur.setAttribute('aria-pressed','false');}
+  btn.setAttribute('aria-pressed','true');cur=btn;
+  A.src=base+'/'+id+(slow?'-slow':'')+'.mp3';
+  N.textContent=btn.getAttribute('data-label')+(slow?'（ゆっくり）':'')+' を再生中';
+  A.play().catch(function(){N.textContent='もう一度ボタンを押してください';});
+}
+</script>
+</body></html>
